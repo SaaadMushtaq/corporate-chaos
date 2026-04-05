@@ -37,7 +37,7 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
     >
       {/* Colored top accent bar */}
       <motion.div
-        className="h-1 w-full bg-gradient-to-r from-red-500 via-orange-400 to-red-600"
+        className="h-1 w-full bg-linear-to-r from-red-500 via-orange-400 to-red-600"
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{
@@ -48,7 +48,6 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
         style={{ transformOrigin: "left" }}
       />
 
-      {/* Card Header */}
       <div className="flex items-center justify-between px-5 py-3.5 border-b border-stone-100">
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center shadow-sm">
@@ -73,7 +72,6 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
       </div>
 
       <div className="px-5 py-4 space-y-4">
-        {/* Excuse Text */}
         <div className="relative border-l-4 border-red-400 pl-4">
           <MessageCircle className="absolute -left-2.5 top-0 w-4 h-4 text-red-400 bg-white" />
           <p className="text-gray-800 text-sm leading-relaxed font-mono pt-1">
@@ -81,9 +79,7 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
           </p>
         </div>
 
-        {/* Stats Row */}
         <div className="grid grid-cols-3 gap-3">
-          {/* Believability */}
           <div className="space-y-1.5 bg-stone-50 rounded-xl p-3 border border-stone-100">
             <div className="flex items-center gap-1">
               <Activity className="w-3 h-3 text-gray-400" />
@@ -94,7 +90,7 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
             <div className="flex items-center gap-2">
               <div className="flex-1 bg-gray-200 rounded-full h-1.5 overflow-hidden">
                 <motion.div
-                  className="bg-gradient-to-r from-red-400 to-red-600 h-1.5 rounded-full"
+                  className="bg-linear-to-r from-red-400 to-red-600 h-1.5 rounded-full"
                   initial={{ width: 0 }}
                   animate={{
                     width: hovered
@@ -114,7 +110,6 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
             </div>
           </div>
 
-          {/* Delivery Tone */}
           <div className="space-y-1.5 bg-stone-50 rounded-xl p-3 border border-stone-100">
             <div className="flex items-center gap-1">
               <TrendingUp className="w-3 h-3 text-gray-400" />
@@ -131,7 +126,6 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
             </span>
           </div>
 
-          {/* Success Rate */}
           <div className="space-y-1.5 bg-stone-50 rounded-xl p-3 border border-stone-100">
             <p className="text-[10px] uppercase tracking-widest text-gray-500 font-bold">
               Success Rate
@@ -142,7 +136,6 @@ export default function ExcuseCard({ excuse, index }: ExcuseCardProps) {
           </div>
         </div>
 
-        {/* Pro Tip */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

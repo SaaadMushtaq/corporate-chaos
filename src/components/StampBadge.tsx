@@ -1,10 +1,4 @@
-import {
-  Skull,
-  ShieldCheck,
-  ShieldAlert,
-  ShieldX,
-  ShieldOff,
-} from "lucide-react";
+import { Skull, ShieldCheck, ShieldAlert, ShieldX } from "lucide-react";
 
 export type StampVariant = "low" | "medium" | "high" | "career-ending";
 
